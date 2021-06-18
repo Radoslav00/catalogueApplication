@@ -1,0 +1,35 @@
+﻿@model MVC.ViewModels.ZoneVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ZoneVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ZoneID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZoneID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ZoneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZoneName)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("DELETE", "Delete", new { id = Model.ZoneID })
+
+</p>

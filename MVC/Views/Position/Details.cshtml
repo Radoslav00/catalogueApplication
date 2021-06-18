@@ -1,0 +1,32 @@
+﻿@model MVC.ViewModels.PositionVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PositionVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PositionID)
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(model => model.PositionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayFor(model => model.PositionTitle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PositionTitle)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PositionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MVC.ViewModels.PartVM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PartID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PartName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CatalogueNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZoneID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PartName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CatalogueNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZoneID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarID)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.PartID  }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PartID  })
+        </td>
+    </tr>
+}
+
+</table>

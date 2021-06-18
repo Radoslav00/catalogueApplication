@@ -1,0 +1,80 @@
+﻿@model MVC.ViewModels.PartVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PartVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PartName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CatalogueNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatalogueNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZoneID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZoneID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Zone.ZoneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zone.ZoneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Make)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Manufacturer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("DELETE", "Delete", new { id = Model.PartID })
+</p>
