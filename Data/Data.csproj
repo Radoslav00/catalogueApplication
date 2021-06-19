@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202106181703222_PersonChanged.designer.cs">
       <DependentUpon>202106181703222_PersonChanged.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106190512092_Restraints-added.cs" />
+    <Compile Include="Migrations\202106190512092_Restraints-added.designer.cs">
+      <DependentUpon>202106190512092_Restraints-added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106181703222_PersonChanged.resx">
       <DependentUpon>202106181703222_PersonChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106190512092_Restraints-added.resx">
+      <DependentUpon>202106190512092_Restraints-added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

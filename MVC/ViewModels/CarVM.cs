@@ -19,7 +19,6 @@ namespace MVC.ViewModels
         public string Manufacturer { get; set; }
         public string Color { get; set; }
         [Required]
-
         [StringLength(10, ErrorMessage = "Car fuel type must be maximum 10 letters")]
         public string Fuel { get; set; }
 
